@@ -113,48 +113,73 @@ npx prisma migrate dev
 
 ---
 
-## Running the Application
+# Running the Project
 
-Prerequisites
+## Prerequisites
 
 Make sure you have installed:
 
-Node.js
-npm
-SQLite
-Git
-Install Dependencies
+* Node.js
+* npm
+* SQLite
+* Git
+
+## Install Dependencies
+
+```bash
 npm install
-Setup Environment Variables
+```
 
-Create a .env file in the root directory:
+## Setup Environment Variables
 
+Create a `.env` file in the root directory:
+
+```env
 DATABASE_URL="file:./dev.db"
-Setup Database
+```
+
+## Setup Database
 
 Generate Prisma client:
 
+```bash
 npx prisma generate
+```
 
 Run migrations:
 
+```bash
 npx prisma migrate dev
-Start Development Server
+```
+
+## Start Development Server
 
 Run:
 
+```bash
 npm run dev
+```
 
 Server starts at:
 
+```bash
 http://localhost:3000
-Build Project
+```
+
+## Build Project
 
 To create production build:
 
+```bash
 npm run build
-Start Production Server
+```
+
+## Start Production Server
+
+```bash
 npm run start
+```
+
 
 ---
 
